@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="moffa.nick.mygifts.activities.QuestionActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_question"
+        android:text="Question goes here"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_gender_answers"
+        android:layout_below="@+id/tv_question">
+    </ListView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_age_answers"
+        android:visibility="invisible"
+        android:layout_below="@+id/tv_question">
+    </ListView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_relativity_answers"
+        android:visibility="invisible"
+        android:layout_below="@+id/tv_question">
+    </ListView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_occasion_answers"
+        android:visibility="invisible"
+        android:layout_below="@+id/tv_question">
+    </ListView>
+    <!--<Button-->
+        <!--android:id="@+id/bt_next"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:background="@drawable/rounded_corners"-->
+        <!--style="@style/BackgroundTintWorkaround"-->
+        <!--android:text="@string/next_button_text"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="18sp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="11dp" />-->
+
+    <!-- TODO: Add android:layout_above="@+id/bt_next" when you add the button back-->
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Gifts</string>
+    <string name="welcome_text">Welcome to the My Gifts App!</string>
+    <string name="find_gift">Find your perfect gift for any person and any occasion</string>
+    <string name="answer">Answer 4 simple questions and you\'re ready to find your perfect gift!</string>
+    <string name="start_button_text">Start</string>
+</resources>
