@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/test_item_img"
+        android:layout_marginTop="5dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="65dp"
-            android:layout_height="65dp" />
-        <LinearLayout
-            android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Gift Name"
-                android:textColor="#000"
-                android:textSize="20sp"/>
-        </LinearLayout>
+            android:text="Gift Name"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description about the gift shown"
+            android:layout_marginTop="2dp"/>
     </LinearLayout>
-</RelativeLayout>
+    <!--Add ListView for different stores-->
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>
